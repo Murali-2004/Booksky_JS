@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar">
+            <h1>BOOKSKY</h1>
+            <ul class="nav-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="books.html">Books</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="addlogo">
+            <button id="homeadd">+</button>
+        </div>
+        <div id="addbook">
+
+            <section class="default">
+                <h2 class="title">Rich Dad Poor Dad</h2>
+                <p class="author">by Robert Kiyosaki</p>
+                <p class="genre">Genre: Personal Finance</p>
+                <p class="description">A book that explores the financial philosophies of two fathers, one rich and one
+                    poor, and how their differing views on money shaped their lives.</p>
+                <button class="delete-book" onclick="deleteBook(event) ">Delete</button>
+            </section>
+
+        </div>
+        <section class="create-book" id="create-book">
+            <form class="book1">
+                <input type="text" id="book-name" class="book-name" placeholder="Enter book name">
+                <input type="text" id="author-name" class="author-name" placeholder="Enter author name">
+                <input type="text" id="book-genre" class="book-genre" placeholder="Enter book genre">
+                <textarea id="book-description" class="book-description"
+                    placeholder="Enter book description"></textarea>
+                <div class="buttons">
+                    <button id="add-book" class="add-book">ADD</button>
+                    <button id="cancel-books" class="cancel-books">CANCEL</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

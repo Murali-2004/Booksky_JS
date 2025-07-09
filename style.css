@@ -1,0 +1,207 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+
+}
+
+.navbar {
+    background-color: rgb(93, 124, 96);
+    display: flex;
+    color: beige;
+    justify-content: space-between;
+    position: fixed;      /* Fix the navbar at the top */
+    top: 0;               /* Stick to the top */
+    left: 0;
+    width: 100%;          /* Full width */
+    z-index: 10;    
+
+}
+
+.navbar h1 {
+    color: beige;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 0%;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+
+}
+
+.nav-items a {
+    color: beige;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.content {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: baseline;
+    min-height: 100vh; /* Allows content to grow and page to scroll */
+    height: auto;
+    background-color: rgb(234, 231, 225);
+    position: relative;
+    padding-top:60px;
+}
+
+.addlogo {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(93, 124, 96);
+    border-radius: 50%;
+}
+
+.addlogo button {
+    background-color: transparent;
+    border: none;
+    font-size: 34px;
+    color: beige;
+    cursor: pointer;
+}
+
+#addbook {
+    /* position: fixed; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-wrap: wrap;
+}
+
+.default {
+    width: 400px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    margin: 20px;
+    line-height: normal;
+    background-color: rgb(93, 124, 96);
+    border-radius: 10px;
+    color: beige;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.default :where(h2, p) {
+    margin-bottom: 10px;
+    width: 90%;
+    margin-top: 5px;
+    padding: 5px 0px 0px 0px;
+}
+.default button {
+    font-family: "Poppins", sans-serif;
+    width: fit-content;
+    height: 37px;
+    background-color: beige;
+    color: rgb(93, 124, 96);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 20px;
+    bottom: 20px;
+    right: 20px;
+    position: absolute;
+}
+
+.create-book {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(93, 124, 96, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: none;
+}
+
+.book1 {
+    width: 400px;
+    height: 330px;
+    background-color: rgb(93, 124, 96);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+}
+
+.book1 input {
+    font-family: "Poppins", sans-serif;
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: transparent;
+    color: beige;
+    border: none;
+    border-bottom: 1px solid beige;
+}
+
+.book1 input::placeholder {
+    color: beige;
+}
+
+.book1 :focus {
+    outline: none;
+    border: 1px solid beige;
+}
+
+.book1 textarea {
+    font-family: "Poppins", sans-serif;
+    width: 90%;
+    height: 100px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: rgb(238, 235, 235);
+}
+
+.book1 .buttons {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book1 .cancel-books,
+.book1 .add-book {
+    font-family: "Poppins", sans-serif;
+    width: fit-content;
+    height: 37px;
+    background-color: beige;
+    color: rgb(93, 124, 96);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 20px;
+
+
+}
